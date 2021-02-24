@@ -1,0 +1,67 @@
+@import "../../styles/colors";
+
+.HomeScreenContainer {
+  min-height: 50vh;
+  margin: 50px 0;
+
+  h6 {
+    text-align: center;
+    margin: 100px 0;
+  }
+
+  .loading {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .articleList {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .pagination {
+    align-self: flex-end;
+    justify-content: center;
+    margin-top: 20px;
+
+    &:first-of-type {
+      margin-top: 25px;
+    }
+
+    &:last-of-type {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    li {
+      margin: 0 2px;
+
+      a {
+        width: 20px;
+        text-align: center;
+        color: $white;
+        display: inline-block;
+      }
+    }
+
+    .active {
+      font-weight: 700;
+      transform: scale(1.2);
+    }
+
+    a.page-link {
+      color: $white;
+    }
+
+    .page-link {
+      background-color: $white;
+      color: $white;
+      border: none;
+    }
+  }
+}
