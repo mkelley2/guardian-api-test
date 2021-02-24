@@ -34,7 +34,7 @@ export const SearchBar: FC<SearchBarProps> = ({
               onChange(e.target.value);
             }}
           />
-          <Button type="submit" onClick={submit}>
+          <Button variant="success" type="submit" onClick={submit}>
             {isLoading ? (
               <FontAwesomeIcon size="lg" spin={true} icon="spinner" />
             ) : (
