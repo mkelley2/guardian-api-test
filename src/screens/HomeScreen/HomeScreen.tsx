@@ -40,7 +40,6 @@ export const HomeScreen: FC<HomeScreenProps> = (props: HomeScreenProps) => {
         if (code === 200) {
           setError("");
           if (data) {
-            console.log(data);
             setData(data);
           }
         } else {

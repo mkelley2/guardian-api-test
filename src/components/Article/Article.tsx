@@ -14,7 +14,6 @@ export const Article: FC<ArticleProps> = ({ article }: ArticleProps) => {
     trailText,
     byline,
   } = fields;
-  console.log(webUrl);
 
   return (
     <a
